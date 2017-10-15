@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Hello!</h2>
+					<p>
+						Welcome to Class 2. We'll get started soon.
+					</p>
+				</section>
+				<section>
+					<h3>Let's Review</h3>
+					<pre class="fragment"><code class="hljs" data-trim contenteditable="">
+					</code></pre>
+				</section>
+				<section>
+					<h3 class="fragment">Content</h3>
+					<h3 class="fragment">+ HTML</h3>
+					<h3 class="fragment">+ CSS</h3>
+					<h3 class="fragment">= Website</h3>
+				</section>
+				<section>
+					<p><strong>H</strong>yper<strong> T</strong>ext
+						<strong>M</strong>arkup <strong>L</strong>anguage</p>
+						<img src="img/brookviewhtml.png"/>
+				</section>
+				<section>
+					<p><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
+					<img src="img/brookview.png"/>
+				</section>
+
+				<section>
+					<img src="img/selector-example1.png"/>
+				</section>
+				<section>
+					<img src="img/selector-example2.png"/>
+				</section>
+				<section>
+					<img src="img/selector-example3.png"/>
+				</section>
+				<section>
+					<h3>Selectors</h3>
+					<div style="float:left;width:65%;">
+						<pre><code class="hljs" data-trim>
+							&lt;body>
+							  &lt;h1>Header 1&lt;/h1>
+							  &lt;p>This is my paragraph of content&lt;/p>
+							&lt;/body>
+						</code></pre>
+					</div>
+					<div style="float:left;width:35%;">
+						<pre><code class="hljs" data-trim>
+							h1 {
+								color : green;
+							}
+						</code></pre>
+					</div>
+					<br/><br/><br/>
+					<div class="fragment">
+						<p style="color:green; font-size:1.5em">Header 1</h1>
+						<p>This is my paragraph of content</p>
+					</div>
+				</section>
+				<section>
+					<h3>Selectors</h3>
+					<div style="float:left;width:65%;">
+						<pre><code class="hljs" data-trim>
+							&lt;body>
+							 &lt;h1>Header 1&lt;/h1>
+							 &lt;p>This is my paragraph of content&lt;/p>
+							&lt;/body>
+						</code></pre>
+					</div>
+					<div style="float:left;width:35%;">
+						<pre><code class="hljs" data-trim>
+							h1 {
+								color : green;
+							}
+						</code></pre>
+					</div>
+					<br/><br/><br/>
+					<div class="fragment">
+						<p style="color:green; font-size:1.5em">Header 1</h1>
+						<p>This is my paragraph of content</p>
+					</div>
+				</section>
+				<section>
+					<h3>Selectors</h3>
+					<div style="float:left;width:65%;">
+						<pre><code class="hljs" data-trim>
+							&lt;body>
+							 &lt;h1>Header 1&lt;/h1>
+							 &lt;p>This is my paragraph of content&lt;/p>
+							&lt;/body>
+						</code></pre>
+					</div>
+					<div style="float:left;width:35%;">
+						<pre><code class="hljs" data-trim>
+							p {
+								color : green;
+							}
+						</code></pre>
+					</div>
+					<br/><br/><br/>
+					<div class="fragment">
+						<p style="font-size:1.5em;">Header 1</h1>
+						<p style="color:green;">This is my paragraph of content</p>
+					</div>
+				</section>
+				<section>
+					<h3>Selectors</h3>
+					<div style="float:left;width:65%;">
+						<pre><code class="hljs" data-trim>
+							&lt;body>
+							 &lt;h1>Header 1&lt;/h1>
+							 &lt;p>This is my paragraph of content&lt;/p>
+							&lt;/body>
+						</code></pre>
+					</div>
+					<div style="float:left;width:35%;">
+						<pre><code class="hljs" data-trim>
+							body {
+								color : green;
+							}
+						</code></pre>
+					</div>
+					<br/><br/><br/>
+					<div class="fragment">
+						<p style="color:green; font-size:1.5em;">Header 1</h1>
+						<p style="color:green;">This is my paragraph of content</p>
+					</div>
+				</section>
+				<section>
+					<h3>Linking CSS and HTML</h3>
+					<p>Option 1: Inline</p>
+					<div>
+						<pre><code class="hljs" data-trim>
+							&lt;body style=&quot;color:green;&quot;>
+							  &lt;h1 style=&quot;background-color:red;&quot;>Header&lt;/h1>
+							&lt;/body>
+						</code></pre>
+				</section>
+				<section>
+					<h3>Linking CSS and HTML</h3>
+					<p>Option 2: Style Block</p>
+					<div>
+						<pre><code class="hljs" data-trim>
+							&lt;head>
+							 &lt;style type=&quot;text/css&quot;>
+							 body {
+							  color:red;
+							 }
+							 h1 {
+							  background-color:green;
+							 }
+						   &lt;/style>
+							&lt;/head>
+							&lt;body>
+							 &lt;h1>Header&lt;/h1>
+							&lt;/body>
+						</code></pre>
+				</section>
+				<section>
+					<h3>Linking CSS and HTML</h3>
+					<p>Option 3: External File (Preferred)</p>
+					<div style="float:left;width:65%;">
+						<p>index.html</p>
+						<pre><code class="hljs" data-trim>
+							&lt;head>
+							 &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;/>
+							&lt;/head>
+							&lt;body>
+							 &lt;h1>Header 1&lt;/h1>
+							&lt;/body>
+						</code></pre>
+					</div>
+					<div style="float:left;width:35%;">
+						<p>style.css</p>
+						<pre><code class="hljs" data-trim>
+							body {
+							 color : red;
+							}
+							h1 {
+							 background-color : green;
+							}
+						</code></pre>
+					</div>
+				</section>
+				<section>
+					<h3>Relative Paths</h3>
+					<pre><code class="hljs" data-trim>
+						 &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;/>
+					</code></pre>
+				</section>
+				<section>
+					<h3>Let's Review</h3>
+					<pre><code class="hljs" data-trim contenteditable>
+						&lt;html>
+						&lt;/html>
+					</code></pre>
+					<pre><code class="hljs" data-trim contenteditable>
+					</code></pre>
+				</section>
+				<section>
+					<h3><a href="brookview.html">Assignment 1</a></h3>
+				</section>
+				<section>
+					<h3>Colors</h3>
+					<p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
