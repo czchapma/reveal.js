@@ -1,0 +1,95 @@
+= Brookview Class 1 Notes
+:source-highlighter: highlightjs
+
+== Definitions
+
+* *Web Design:* The process of planning, structuring and designing a website.
+* *Web Development:* The process of programming a website, may involve HTML, CSS, Javascript and many other languages.
+* *Front end development:* The process of coding the visible elements of a website
+* *Back end development:* The process of coding the inner workings and functionality of a website.
+* *HTML (Hyper Text Markup Language):* The code that allows us to build websites. Provides structure to a webpage's content.
+* *HTML Element:* A piece of content and its opening and closing tags. (Ex: <p> Paragraph content </p>)
+
+== Structure of an HTML file
+[source,html]
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the website</title>
+  </head>
+  <body>
+    Content goes here.
+  </body>
+</html>
+
+== Headings
+Used to title different sections of your website.
+[source,html]
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+== Paragraphs
+[source,html]
+<p>The content of the paragraph goes between the tags.</p>
+
+=== Bold text
+[source,html]
+<p>The <strong>bold content</strong> of the paragraph goes between the strong tags.</p>
+
+=== Emphasized text
+[source,html]
+<p>The <em>emphasized text</em> of the paragraph goes between the em tags.</p>
+
+== Links
+[source,html]
+<a href="url-to-go-to.com">text that is visible on your website</a>
+
+=== New tabs
+Use target="_blank" to open a link in a new tab:
+[source,html]
+<a href="google.com" target="_blank">This link will open in a new tab.</a>
+
+=== Emails
+Use mailto: to make an email link:
+[source,html]
+<a href="mailto:info@mywebsite.com"">Email me.</a>
+
+== Lists
+=== Unordered Lists ===
+* First item
+* Second item
+* Third item
+
+[source,html]
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ul>
+
+=== Ordered Lists
+1. First item
+2. Second item
+3. Third item
+
+[source,html]
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+
+== Self-closing tags
+Most tags require an open tag (<p>) and a closing tag (</p>).  Self-closing tags only need one tag.
+
+=== Line Breaks
+[source,html]
+<br/>
+
+=== Images
+[source,html]
+<img src="myimage.png" />
